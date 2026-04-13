@@ -1,27 +1,11 @@
-# Fault-Tolerant Workflow Design in Low-Code Automation Systems  
-## A Comparative Study Using n8n
+# An Empirical Evaluation of Fault-Tolerance Mechanisms in Low-Code Workflow Automation Systems  
+## A Case Study Using n8n
 
 This repository contains the full implementation artefacts, workflow definitions, experimental datasets, and supporting materials for the dissertation project:
 
-**Fault-Tolerant Workflow Design in Low-Code Automation Systems: A Comparative Study Using n8n**
+**An Empirical Evaluation of Fault-Tolerance Mechanisms in Low-Code Workflow Automation Systems: A Case Study Using n8n**
 
 The project investigates the impact of fault-tolerance mechanisms on workflow reliability and performance within a low-code automation environment using **n8n** as the experimental platform.
-
----
-
-## Project Overview
-
-Low-code workflow platforms are increasingly used for business process automation, API orchestration, and event-driven system integration.
-
-This study evaluates how progressively enhanced fault-tolerance mechanisms affect workflow reliability under controlled HTTP response conditions.
-
-Three workflow variants were implemented and experimentally evaluated:
-
-- **Baseline workflow**
-- **Failure-aware workflow**
-- **Retry-enhanced workflow**
-
-A total of **210 controlled workflow executions** were performed.
 
 ---
 
@@ -52,4 +36,13 @@ The original implementation was developed on a **self-hosted Debian Linux enviro
 - **HTTP Simulation:** httpbin
 - **Logging:** Notion
 
-The workflows may be reproduced on any system capable of running Docker.
+---
+
+## Running the Project
+
+1. Clone the repository
+2. Navigate to project root folder
+3. Run "docker compose up -d"
+
+- **n8n:** `http://localhost:5678'
+- **httpbin** 'http://localhost:8280'

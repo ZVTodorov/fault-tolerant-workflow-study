@@ -1,0 +1,777 @@
+{
+  "name": "THESIS_Enhanced_Retry_HTTP 2.0",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "={{$(\"Set Metadata\").item.json.test_url_1}}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -784,
+        112
+      ],
+      "id": "ed77ac8e-7e33-45b1-a6f4-fde7f96fd081",
+      "name": "HTTP Request",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1232,
+        112
+      ],
+      "id": "a8c914c1-31cb-45c7-a34b-b8e2670ac001",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b65703d3-e47f-4d2b-b0d1-18ac58564960",
+              "leftValue": "={{$json.statusCode}}",
+              "rightValue": 400,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -544,
+        112
+      ],
+      "id": "dde133f4-6d61-40b9-81ee-3d415cc77efc",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "57d08b3b-79b6-4ee3-b317-ee5c056c6156",
+              "name": "workflow_name",
+              "value": "THESIS_Enhanced_Retry_HTTP",
+              "type": "string"
+            },
+            {
+              "id": "8518bc27-ced6-49d4-a6b2-235bfc2a4673",
+              "name": "variant",
+              "value": "retry-enhanced",
+              "type": "string"
+            },
+            {
+              "id": "f0996014-4de9-4185-985d-714b43be9748",
+              "name": "attempt_count",
+              "value": "={{1}}",
+              "type": "string"
+            },
+            {
+              "id": "255df24a-c30e-4b16-8fd9-47288dfb2614",
+              "name": "start_time",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "407d8c04-8941-46ee-9e2a-01c5d3ff8dbb",
+              "name": "test_url_1",
+              "value": "=http://httpbin/status/500",
+              "type": "string"
+            },
+            {
+              "id": "16a9025f-90de-4079-b364-63039626ea38",
+              "name": "test_url_2",
+              "value": "=http://httpbin/status/200",
+              "type": "string"
+            },
+            {
+              "id": "5646e043-9fd2-47fb-aaae-f3c1deba5df5",
+              "name": "scenario",
+              "value": "http_500 > 200",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -992,
+        112
+      ],
+      "id": "2bf8cea8-9087-4e96-9e62-f0694c682f92",
+      "name": "Set Metadata"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "81d7e5be-5951-4d06-adc2-ed07e11240bb",
+              "name": "status",
+              "value": "success",
+              "type": "string"
+            },
+            {
+              "id": "3d9fb469-7c5c-49bd-ab5c-e7740bb99e09",
+              "name": "http_code",
+              "value": "={{$json.statusCode}}",
+              "type": "string"
+            },
+            {
+              "id": "630d7142-ab1d-4f81-a20c-d1dac93d5842",
+              "name": "error_message",
+              "value": "={{\"\"}}",
+              "type": "string"
+            },
+            {
+              "id": "bf5a3dfc-0c30-448e-aee6-cb2eaf62b264",
+              "name": "timestamp",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "b43215df-cb06-43a8-91b5-bd2dafbfe60c",
+              "name": "end_time",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "154fc641-9fba-4402-8513-545eeab0e10f",
+              "name": "start_time",
+              "value": "={{$(\"Set Metadata\").item.json.start_time}}",
+              "type": "string"
+            },
+            {
+              "id": "4fc9faaa-59e8-4508-bda9-be792b2988b3",
+              "name": "variant",
+              "value": "={{$(\"Set Metadata\").item.json.variant}}",
+              "type": "string"
+            },
+            {
+              "id": "b2a1864b-79ad-44b0-a804-84c0c32b1959",
+              "name": "scenario",
+              "value": "={{$(\"Set Metadata\").item.json.scenario}}",
+              "type": "string"
+            },
+            {
+              "id": "80abc1e9-34ed-4631-8870-1e4c0d086b85",
+              "name": "attempt_count",
+              "value": "={{1}}",
+              "type": "string"
+            },
+            {
+              "id": "7abbde05-d3fc-4d81-baf9-6a05f15899aa",
+              "name": "workflow_name",
+              "value": "={{$(\"Set Metadata\").item.json.workflow_name}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -240,
+        16
+      ],
+      "id": "6f01560b-2aa8-4a32-b488-d175eb3c241e",
+      "name": "False"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -240,
+        208
+      ],
+      "id": "601aad1c-a1b2-4d06-9023-54aac09fc754",
+      "name": "Wait",
+      "webhookId": "3eb56d1d-e387-4cc4-b27b-27103b432fb2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "42ed85c4-528a-4b08-b5f9-834502068369",
+              "name": "attempt_count",
+              "value": "={{2}}",
+              "type": "string"
+            },
+            {
+              "id": "23532541-d1b8-485f-af9c-d1e617c8db1f",
+              "name": "start_time",
+              "value": "={{$(\"Set Metadata\").item.json.start_time}}",
+              "type": "string"
+            },
+            {
+              "id": "b089b73d-e463-431f-b81d-a392dec531e9",
+              "name": "workflow_name",
+              "value": "={{$(\"Set Metadata\").item.json.workflow_name}}",
+              "type": "string"
+            },
+            {
+              "id": "32680432-5a6e-4dc2-baa4-65ddb2301a3b",
+              "name": "variant",
+              "value": "={{$(\"Set Metadata\").item.json.variant}}",
+              "type": "string"
+            },
+            {
+              "id": "3db6cbfe-4ce1-4403-9244-2c35c911c671",
+              "name": "scenario",
+              "value": "={{$(\"Set Metadata\").item.json.scenario}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -64,
+        208
+      ],
+      "id": "0cc238b2-ce96-4c0e-83df-b5a04d4ca6d3",
+      "name": "Metadata Carryover"
+    },
+    {
+      "parameters": {
+        "url": "={{$(\"Set Metadata\").item.json.test_url_2}}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        128,
+        208
+      ],
+      "id": "7ff1f2e9-abc9-4bde-bd67-4353ee9b0bfc",
+      "name": "HTTP Request 2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "79e2dec4-0482-4ba5-b7c8-55208f9cd850",
+              "leftValue": "={{$json.statusCode}}",
+              "rightValue": 400,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        304,
+        208
+      ],
+      "id": "133c86b1-ac4b-483a-a65a-68e374b1503b",
+      "name": "If 2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c719f599-5ea5-4053-9907-2df99a85dc1d",
+              "name": "status",
+              "value": "recovered",
+              "type": "string"
+            },
+            {
+              "id": "89757cdb-b400-43fa-a986-27eed98cd91b",
+              "name": "http_code",
+              "value": "={{$json.statusCode}}",
+              "type": "string"
+            },
+            {
+              "id": "30f75ea5-80e2-487f-ba04-72b894351c32",
+              "name": "error_message",
+              "value": "={{\"\"}}",
+              "type": "string"
+            },
+            {
+              "id": "3da2fc15-ad90-46a8-a996-abd9a74c33f3",
+              "name": "timestamp",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "dbec86a7-30c4-4e5f-8d07-87a1b7d6d711",
+              "name": "end_time",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "d0edba76-2482-4b0e-a20d-e204e695ab86",
+              "name": "start_time",
+              "value": "={{$(\"Set Metadata\").item.json.start_time}}",
+              "type": "string"
+            },
+            {
+              "id": "7a450f2b-8083-4177-a63a-ede5de6db798",
+              "name": "workflow_name",
+              "value": "={{$(\"Set Metadata\").item.json.workflow_name}}",
+              "type": "string"
+            },
+            {
+              "id": "34f5d0ef-73df-47ee-8885-66ee2de8c3e6",
+              "name": "variant",
+              "value": "={{$(\"Set Metadata\").item.json.variant}}",
+              "type": "string"
+            },
+            {
+              "id": "a640887b-8155-46ff-9b61-5c08432cb128",
+              "name": "scenario",
+              "value": "={{$(\"Set Metadata\").item.json.scenario}}",
+              "type": "string"
+            },
+            {
+              "id": "0e0e4710-0f97-4fae-bb99-e7240a74e370",
+              "name": "attempt_count",
+              "value": "={{2}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        736,
+        448
+      ],
+      "id": "a4f0e4a1-c04b-4fe8-bc34-6166e308dcd9",
+      "name": "Recover"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "df29862b-bd6e-4289-9d7d-78e54daddd1b",
+      "name": "First attempt"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        304,
+        16
+      ],
+      "id": "e073a8c2-21a5-42de-9a35-91e6ed4a9c1e",
+      "name": "Second Attempt"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const start = new Date($json.start_time);\nconst end = new Date($json.end_time);\n\nconst duration_ms = end.getTime() - start.getTime();\n\nreturn {\n  json: {\n    ...$json,\n    workflow_name: $json.workflow_name ?? '',\n    variant: $json.variant ?? '',\n    scenario: $json.scenario ?? '',\n    http_code: $json.http_code != null ? Number($json.http_code) : null,\n    attempt_count: $json.attempt_count != null ? Number($json.attempt_count) : null,\n    duration_ms: Number.isFinite(duration_ms) ? Number(duration_ms) : null,\n    error_message: $json.error_message ?? '',\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        16
+      ],
+      "id": "c6e45d22-4b50-443e-b489-83c8a7b5e6bc",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "34144bb6-fd31-80f0-8552-ffb164de46f5",
+          "mode": "list",
+          "cachedResultName": "Logs (1)",
+          "cachedResultUrl": "https://www.notion.so/34144bb6fd3180f08552ffb164de46f5"
+        },
+        "title": "={{$json.workflow_name}} - {{$json.timestamp}}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "workflow_name|title",
+              "title": "={{$json.workflow_name}}"
+            },
+            {
+              "key": "timestamp|date",
+              "date": "={{$json.timestamp}}"
+            },
+            {
+              "key": "attempt_count|number",
+              "numberValue": "={{$json.attempt_count}}"
+            },
+            {
+              "key": "http_code|number",
+              "numberValue": "={{$json.http_code}}"
+            },
+            {
+              "key": "status|rich_text",
+              "textContent": "={{$json.status}}"
+            },
+            {
+              "key": "error_message|rich_text",
+              "textContent": "={{$json.error_message}}"
+            },
+            {
+              "key": "notes|rich_text",
+              "textContent": "={{\"\"}}"
+            },
+            {
+              "key": "variant|rich_text",
+              "textContent": "={{$json.variant}}"
+            },
+            {
+              "key": "scenario|rich_text",
+              "textContent": "={{$json.scenario}}"
+            },
+            {
+              "key": "duration_ms|number",
+              "numberValue": "={{$json.duration_ms}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        656,
+        16
+      ],
+      "id": "7997a634-267e-408a-bde1-a9096fe69288",
+      "name": "Create a database page",
+      "notesInFlow": false,
+      "credentials": {
+        "notionApi": {
+          "id": "PlZ9KgCBmd7irSeJ",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "01c36fd0-41c6-40de-b1da-25b6b49c8dea",
+              "name": "status",
+              "value": "failed",
+              "type": "string"
+            },
+            {
+              "id": "70f12d36-daa3-4002-a3f4-5244da8d81d3",
+              "name": "http_code",
+              "value": "={{$json.statusCode}}",
+              "type": "string"
+            },
+            {
+              "id": "b6c88a7a-dc67-4733-9d09-b628a9ec6f9a",
+              "name": "error_message",
+              "value": "={{$json.statusMessage}}",
+              "type": "string"
+            },
+            {
+              "id": "3f5a473f-b3b0-4999-b1b7-086aa87c7ea4",
+              "name": "timestamp",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "1ef12b8c-c353-4289-b040-8efb9eb1c623",
+              "name": "end_time",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "e34a138b-3a30-4ab5-856d-e70733938947",
+              "name": "start_time",
+              "value": "={{$(\"Set Metadata\").item.json.start_time}}",
+              "type": "string"
+            },
+            {
+              "id": "f91a5c11-8491-4ed7-abdc-33f1016f9a32",
+              "name": "workflow_name",
+              "value": "={{$(\"Set Metadata\").item.json.workflow_name}}",
+              "type": "string"
+            },
+            {
+              "id": "2f456838-c520-4b34-8b64-cc38caf01346",
+              "name": "variant",
+              "value": "={{$(\"Set Metadata\").item.json.variant}}",
+              "type": "string"
+            },
+            {
+              "id": "8b8ef154-597d-4810-8fb9-95585c4085da",
+              "name": "scenario",
+              "value": "={{$(\"Set Metadata\").item.json.scenario}}",
+              "type": "string"
+            },
+            {
+              "id": "b5123588-c00f-4782-88bd-94f03dec714a",
+              "name": "attempt_count",
+              "value": "={{2}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        240
+      ],
+      "id": "bce52876-aec0-4086-adc0-1b3ddcaefdec",
+      "name": "Failed After Retry"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Set Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "False",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Metadata": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Metadata Carryover",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Metadata Carryover": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request 2": {
+      "main": [
+        [
+          {
+            "node": "If 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If 2": {
+      "main": [
+        [
+          {
+            "node": "Failed After Retry",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Recover",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recover": {
+      "main": [
+        [
+          {
+            "node": "First attempt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "False": {
+      "main": [
+        [
+          {
+            "node": "First attempt",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "First attempt": {
+      "main": [
+        [
+          {
+            "node": "Second Attempt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Second Attempt": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Create a database page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Failed After Retry": {
+      "main": [
+        [
+          {
+            "node": "Second Attempt",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "0e0c391a-c6d0-4d53-a03b-ae1a29fd960e",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "0a4dd6b3a0e2445dc708279a530db8052cf0d81a8baa1992e01a8cfe046a1342"
+  },
+  "id": "hgj0h3dTR2TrQasy",
+  "tags": []
+}

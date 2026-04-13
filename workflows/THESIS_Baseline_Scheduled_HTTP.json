@@ -1,0 +1,328 @@
+{
+  "name": "THESIS_Baseline_Scheduled_HTTP",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "={{$(\"Set Metadata\").item.json.test_url}}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        368,
+        0
+      ],
+      "id": "0a5e0817-22cf-4cae-be2b-b9995702d0df",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9adcda62-62e7-4c2b-8410-858b28e8b4ad",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66502477-63c5-4e33-98e4-8dd292f2d49d",
+              "name": "workflow_name",
+              "value": "THESIS_Baseline_Scheduled_HTTP",
+              "type": "string"
+            },
+            {
+              "id": "4743ad14-6cdc-4aaa-98db-29469e51730f",
+              "name": "variant",
+              "value": "baseline",
+              "type": "string"
+            },
+            {
+              "id": "ccbdbdd8-11bf-44ca-b820-f3a65a6ffbef",
+              "name": "scenario",
+              "value": "http_500",
+              "type": "string"
+            },
+            {
+              "id": "4ca52831-eccb-40f3-afb4-78181c6e35d6",
+              "name": "attempt_count",
+              "value": "={{1}}",
+              "type": "string"
+            },
+            {
+              "id": "d70281e2-6317-4021-8ea9-94f03cead1fc",
+              "name": "start_time",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "34049c03-c27b-47b1-b407-a9da1c5668ca",
+              "name": "test_url",
+              "value": "http://httpbin/status/500",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        192,
+        0
+      ],
+      "id": "373b4fc6-392b-453d-a32c-fa3fc94e77a0",
+      "name": "Set Metadata"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const start = new Date($json.start_time);\nconst end = new Date($json.end_time);\n\nconst duration_ms = end.getTime() - start.getTime();\n\nreturn {\n  json: {\n    ...$json,\n    http_code: $json.http_code != null ? Number($json.http_code) : null,\n    attempt_count: $json.attempt_count != null ? Number($json.attempt_count) : null,\n    duration_ms: Number.isFinite(duration_ms) ? duration_ms : null,\n    error_message: $json.error_message ?? \"\",\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ],
+      "id": "8b89122b-a334-49fc-90ff-16f32772baab",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "34144bb6-fd31-80f0-8552-ffb164de46f5",
+          "mode": "list",
+          "cachedResultName": "Logs (1)",
+          "cachedResultUrl": "https://www.notion.so/34144bb6fd3180f08552ffb164de46f5"
+        },
+        "title": "Logs",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "workflow_name|title",
+              "title": "={{$json.workflow_name}}"
+            },
+            {
+              "key": "timestamp|date",
+              "date": "={{$json.timestamp}}"
+            },
+            {
+              "key": "variant|rich_text",
+              "textContent": "={{$json.variant}}"
+            },
+            {
+              "key": "scenario|rich_text",
+              "textContent": "={{$json.scenario}}"
+            },
+            {
+              "key": "status|rich_text",
+              "textContent": "={{$json.status}}"
+            },
+            {
+              "key": "http_code|number",
+              "numberValue": "={{$json.http_code}}"
+            },
+            {
+              "key": "attempt_count|number",
+              "numberValue": "={{$json.attempt_count}}"
+            },
+            {
+              "key": "duration_ms|number",
+              "numberValue": "={{$json.duration_ms}}"
+            },
+            {
+              "key": "error_message|rich_text",
+              "textContent": "={{$json.error_message}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        896,
+        0
+      ],
+      "id": "de210393-7eaf-457c-8b4b-de39edefb8d2",
+      "name": "Create a database page",
+      "credentials": {
+        "notionApi": {
+          "id": "PlZ9KgCBmd7irSeJ",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0e8799db-a48c-43e6-87aa-ea2983214f1e",
+              "name": "status",
+              "value": "={{$json.statusCode >= 400 ? \"failed\" : \"success\"}}",
+              "type": "string"
+            },
+            {
+              "id": "2c9ec6e2-19c5-48be-a914-f05efb9a97bf",
+              "name": "http_code",
+              "value": "={{$json.statusCode}}",
+              "type": "string"
+            },
+            {
+              "id": "a94a059a-ad1d-4594-a43e-5ea8abc5492e",
+              "name": "error_message",
+              "value": "={{$json.statusCode >= 400 ? $json.statusMessage : \"\"}}",
+              "type": "string"
+            },
+            {
+              "id": "e8f45f9c-294a-4798-88f3-be377e5810fb",
+              "name": "timestamp",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "7e353a11-25d4-40be-8cce-652207125e2b",
+              "name": "end_time",
+              "value": "={{$now.toISO()}}",
+              "type": "string"
+            },
+            {
+              "id": "e2bbdd3a-38ec-4594-be91-b971c7d12fa8",
+              "name": "start_time",
+              "value": "={{$(\"Set Metadata\").item.json.start_time}}",
+              "type": "string"
+            },
+            {
+              "id": "6110c7ed-33bf-416c-b9df-fe81462a47d3",
+              "name": "workflow_name",
+              "value": "={{$(\"Set Metadata\").item.json.workflow_name}}",
+              "type": "string"
+            },
+            {
+              "id": "21756dc9-8ef0-46a6-9874-c1b0d7c38ede",
+              "name": "variant",
+              "value": "={{$(\"Set Metadata\").item.json.variant}}",
+              "type": "string"
+            },
+            {
+              "id": "217f894f-a28a-4c3c-b01c-4c303b16726c",
+              "name": "scenario",
+              "value": "={{$(\"Set Metadata\").item.json.scenario}}",
+              "type": "string"
+            },
+            {
+              "id": "fe2ac272-b799-4b7c-ad64-915b171f4688",
+              "name": "attempt_count",
+              "value": "={{1}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        544,
+        0
+      ],
+      "id": "6aaf1cd9-35bb-4455-83f0-d67523b0663d",
+      "name": "Set Result"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Set Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Metadata": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Set Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Result": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Create a database page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "e6f911e2-14d5-42bc-8908-354d73499f32",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "0a4dd6b3a0e2445dc708279a530db8052cf0d81a8baa1992e01a8cfe046a1342"
+  },
+  "id": "5pOLO90R9QN8VLwF",
+  "tags": []
+}

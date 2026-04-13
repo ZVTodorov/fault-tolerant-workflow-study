@@ -1,0 +1,211 @@
+﻿workflow_name,timestamp,variant,scenario,http_code,attempt_count,duration_ms,notes,status,error_message
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:36 AM (GMT)",baseline,http_200,200,1,13,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:37 AM (GMT)",baseline,http_200,200,1,10,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:38 AM (GMT)",baseline,http_200,200,1,9,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:39 AM (GMT)",baseline,http_200,200,1,11,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:40 AM (GMT)",baseline,http_200,200,1,9,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:41 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:42 AM (GMT)",baseline,http_200,200,1,9,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:43 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:44 AM (GMT)",baseline,http_200,200,1,10,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:45 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:46 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:47 AM (GMT)",baseline,http_200,200,1,9,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:48 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:49 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:50 AM (GMT)",baseline,http_200,200,1,11,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:51 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:52 AM (GMT)",baseline,http_200,200,1,6,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:53 AM (GMT)",baseline,http_200,200,1,7,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:54 AM (GMT)",baseline,http_200,200,1,7,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:55 AM (GMT)",baseline,http_200,200,1,10,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:56 AM (GMT)",baseline,http_200,200,1,9,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:57 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:58 AM (GMT)",baseline,http_200,200,1,9,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 4:59 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:00 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:01 AM (GMT)",baseline,http_200,200,1,7,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:02 AM (GMT)",baseline,http_200,200,1,8,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:03 AM (GMT)",baseline,http_200,200,1,7,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:04 AM (GMT)",baseline,http_200,200,1,7,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:05 AM (GMT)",baseline,http_200,200,1,10,,success,
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:06 AM (GMT)",baseline,http_500,500,1,9,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:07 AM (GMT)",baseline,http_500,500,1,9,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:08 AM (GMT)",baseline,http_500,500,1,9,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:09 AM (GMT)",baseline,http_500,500,1,8,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:10 AM (GMT)",baseline,http_500,500,1,8,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:11 AM (GMT)",baseline,http_500,500,1,9,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:12 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:13 AM (GMT)",baseline,http_500,500,1,8,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:14 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:15 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:16 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:17 AM (GMT)",baseline,http_500,500,1,8,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:18 AM (GMT)",baseline,http_500,500,1,8,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:19 AM (GMT)",baseline,http_500,500,1,12,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:20 AM (GMT)",baseline,http_500,500,1,9,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:21 AM (GMT)",baseline,http_500,500,1,11,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:22 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:23 AM (GMT)",baseline,http_500,500,1,10,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:24 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:25 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:26 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:27 AM (GMT)",baseline,http_500,500,1,10,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:28 AM (GMT)",baseline,http_500,500,1,6,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:29 AM (GMT)",baseline,http_500,500,1,17,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:30 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:31 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:32 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:33 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:34 AM (GMT)",baseline,http_500,500,1,8,,failed,INTERNAL SERVER ERROR
+THESIS_Baseline_Scheduled_HTTP,"March 28, 2026 5:35 AM (GMT)",baseline,http_500,500,1,7,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:36 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:37 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:38 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:39 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:40 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:41 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:42 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:43 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:44 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:45 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:46 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:47 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:48 AM (GMT)",failure-aware,http_200,200,1,11,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:49 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:50 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:51 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:52 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:53 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:54 AM (GMT)",failure-aware,http_200,200,1,7,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:55 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:56 AM (GMT)",failure-aware,http_200,200,1,17,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:57 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:58 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 5:59 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:00 AM (GMT)",failure-aware,http_200,200,1,12,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:01 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:02 AM (GMT)",failure-aware,http_200,200,1,11,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:03 AM (GMT)",failure-aware,http_200,200,1,9,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:04 AM (GMT)",failure-aware,http_200,200,1,10,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:05 AM (GMT)",failure-aware,http_200,200,1,8,,success,
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:06 AM (GMT)",failure-aware,http_500,500,1,17,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:07 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:08 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:09 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:10 AM (GMT)",failure-aware,http_500,500,1,13,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:11 AM (GMT)",failure-aware,http_500,500,1,11,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:12 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:13 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:14 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:15 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:16 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:17 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:18 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:19 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:20 AM (GMT)",failure-aware,http_500,500,1,10,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:21 AM (GMT)",failure-aware,http_500,500,1,10,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:22 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:23 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:24 AM (GMT)",failure-aware,http_500,500,1,10,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:25 AM (GMT)",failure-aware,http_500,500,1,10,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:26 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:27 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:28 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:29 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:30 AM (GMT)",failure-aware,http_500,500,1,9,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:31 AM (GMT)",failure-aware,http_500,500,1,11,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:32 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:33 AM (GMT)",failure-aware,http_500,500,1,10,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:34 AM (GMT)",failure-aware,http_500,500,1,8,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_FailureAware_HTTP,"March 28, 2026 6:35 AM (GMT)",failure-aware,http_500,500,1,10,,failure,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:43 AM (GMT+1)",retry-enhanced,http_200,200,1,20,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:44 AM (GMT+1)",retry-enhanced,http_200,200,1,12,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:45 AM (GMT+1)",retry-enhanced,http_200,200,1,10,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:46 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:47 AM (GMT+1)",retry-enhanced,http_200,200,1,11,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:48 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:49 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:50 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:51 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:52 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:53 AM (GMT+1)",retry-enhanced,http_200,200,1,8,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:54 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:55 AM (GMT+1)",retry-enhanced,http_200,200,1,7,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:56 AM (GMT+1)",retry-enhanced,http_200,200,1,7,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:57 AM (GMT+1)",retry-enhanced,http_200,200,1,8,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:58 AM (GMT+1)",retry-enhanced,http_200,200,1,8,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 3:59 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:00 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:01 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:02 AM (GMT+1)",retry-enhanced,http_200,200,1,11,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:03 AM (GMT+1)",retry-enhanced,http_200,200,1,7,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:04 AM (GMT+1)",retry-enhanced,http_200,200,1,7,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:05 AM (GMT+1)",retry-enhanced,http_200,200,1,8,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:06 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:07 AM (GMT+1)",retry-enhanced,http_200,200,1,9,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:08 AM (GMT+1)",retry-enhanced,http_200,200,1,8,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:09 AM (GMT+1)",retry-enhanced,http_200,200,1,10,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:10 AM (GMT+1)",retry-enhanced,http_200,200,1,7,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:11 AM (GMT+1)",retry-enhanced,http_200,200,1,8,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:12 AM (GMT+1)",retry-enhanced,http_200,200,1,7,,success,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:30 AM (GMT+1)",retry-enhanced,http_500,500,2,2045,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:31 AM (GMT+1)",retry-enhanced,http_500,500,2,2020,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:32 AM (GMT+1)",retry-enhanced,http_500,500,2,2023,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:33 AM (GMT+1)",retry-enhanced,http_500,500,2,2032,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:34 AM (GMT+1)",retry-enhanced,http_500,500,2,2027,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:35 AM (GMT+1)",retry-enhanced,http_500,500,2,2034,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:36 AM (GMT+1)",retry-enhanced,http_500,500,2,2020,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:37 AM (GMT+1)",retry-enhanced,http_500,500,2,2037,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:38 AM (GMT+1)",retry-enhanced,http_500,500,2,2027,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:39 AM (GMT+1)",retry-enhanced,http_500,500,2,2035,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:40 AM (GMT+1)",retry-enhanced,http_500,500,2,2023,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:41 AM (GMT+1)",retry-enhanced,http_500,500,2,2021,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:42 AM (GMT+1)",retry-enhanced,http_500,500,2,2037,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:43 AM (GMT+1)",retry-enhanced,http_500,500,2,2020,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:44 AM (GMT+1)",retry-enhanced,http_500,500,2,2031,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:45 AM (GMT+1)",retry-enhanced,http_500,500,2,2024,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:46 AM (GMT+1)",retry-enhanced,http_500,500,2,2032,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:47 AM (GMT+1)",retry-enhanced,http_500,500,2,2033,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:48 AM (GMT+1)",retry-enhanced,http_500,500,2,2021,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:49 AM (GMT+1)",retry-enhanced,http_500,500,2,2022,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:50 AM (GMT+1)",retry-enhanced,http_500,500,2,2032,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:51 AM (GMT+1)",retry-enhanced,http_500,500,2,2023,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:52 AM (GMT+1)",retry-enhanced,http_500,500,2,2032,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:53 AM (GMT+1)",retry-enhanced,http_500,500,2,2022,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 4:54 AM (GMT+1)",retry-enhanced,http_500,500,2,2016,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:10 AM (GMT+1)",retry-enhanced,http_500,500,2,2026,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:11 AM (GMT+1)",retry-enhanced,http_500,500,2,2033,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:12 AM (GMT+1)",retry-enhanced,http_500,500,2,2021,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:13 AM (GMT+1)",retry-enhanced,http_500,500,2,2024,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:14 AM (GMT+1)",retry-enhanced,http_500,500,2,2024,,failed,INTERNAL SERVER ERROR
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:16 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2026,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:17 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2030,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:18 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2023,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:19 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2033,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:20 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2024,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:21 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2032,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:22 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2022,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:23 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2017,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:24 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2033,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:25 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2037,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:26 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2037,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:27 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2033,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:28 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2023,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:29 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2024,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:30 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2024,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:31 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2023,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:32 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2033,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:33 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2023,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:34 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2035,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:35 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2022,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:36 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2034,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:37 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2023,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:38 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2024,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:39 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2022,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:40 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2034,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:41 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2022,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:42 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2038,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:43 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2022,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:44 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2022,,recovered,
+THESIS_Enhanced_Retry_HTTP,"March 29, 2026 5:45 AM (GMT+1)",retry-enhanced,http_500 > 200,200,2,2035,,recovered,

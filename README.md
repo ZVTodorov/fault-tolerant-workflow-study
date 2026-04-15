@@ -45,4 +45,4 @@ The original implementation was developed on a **self-hosted Debian Linux enviro
 3. Run "docker compose up -d"
 
 - **n8n:** `http://localhost:5678'
-- **httpbin** 'http://localhost:8280'
+- **httpbin** 'http://localhost:8082'

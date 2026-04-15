@@ -42,7 +42,12 @@ The original implementation was developed on a **self-hosted Debian Linux enviro
 
 1. Clone the repository
 2. Navigate to project root folder
-3. Run "docker compose up -d"
+3. Modify .env file to your liking
+4. Initiate services via "docker compose up -d"
+5. Manually import the workflows from the workflow folder into n8n
+5. Import Notion api key via the graphical interface for logging
+6. Create a Notion database page following the provided schema
+7. Start workflows
 
 - **n8n:** `http://localhost:5678'
 - **httpbin** 'http://localhost:8082'
